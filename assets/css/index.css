@@ -833,7 +833,7 @@ img {
     width: 200px;
     margin-right: 0;
   }
-  ..footer__content{
+  .footer__content{
     grid-template-columns: repeat(1, max-content);
   }
 }
