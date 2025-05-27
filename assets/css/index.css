@@ -782,7 +782,8 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
+/* For small devices (phones) */
+@media screen and (max-width: 480px) {
   .container {
     margin-inline: 1rem;
   }
@@ -790,30 +791,40 @@ img {
   .section__title {
     font-size: 1.5rem;
     line-height: 1.4;
+    text-align: center;
   }
 
   .section__subtitle {
     font-size: 1rem;
+    text-align: center;
   }
 
   .home__title {
     font-size: 1.75rem;
+    text-align: center;
   }
 
   .home__buttons {
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
-  .home__img-1{
+  .home__img-1 {
     width: 200px;
-    margin-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
-  .about__list{
-    grid-template-columns: repeat(1, 200px);
+  .about__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
   }
 
-  .about__img-1{
+   .about__img-1{
     width: 150px;
     left: 4rem;
   }
@@ -822,11 +833,14 @@ img {
     width: 200px;
     margin-right: 0;
   }
-  .footer__content{
-    grid-template-columns: repeat(1, max-content);
+  .footer__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
   }
+}
 
-} 
 
 
 /* For medium devices */
