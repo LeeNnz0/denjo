@@ -833,11 +833,8 @@ img {
     width: 200px;
     margin-right: 0;
   }
-  .footer__content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    text-align: center;
+  ..footer__content{
+    grid-template-columns: repeat(1, max-content);
   }
 }
 
